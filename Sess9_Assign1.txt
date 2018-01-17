@@ -1,0 +1,24 @@
+Task 1: 
+pnorm(2.64,lower.tail=F)
+0.004145301
+
+pnorm(1.39,lower.tail=F)+pnorm(-1.39,lower.tail=T)
+0.1645289
+
+Task 2:
+d<-data("UCBAdmissions")
+head(as.data.frame(UCBAdmissions))
+d<-as.data.frame(UCBAdmissions)
+tapply(d$Freq,list(admit=d$Admit),sum)
+phat<-1755/(1755+2711)
+qnorm(0.01)
+qnorm(0.99)
+p0<-0.4
+n=1755+2711
+(phat-p)/((p*(1-p)/n)^1/2)
+-261.6667
+It falls under critical region
+
+
+
+
